@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog - CapacitaBR</title>
+</head>
+<body>
+<!-- Formulário para criar post -->
+		<section id="criar-post">
+        <h2>Criar Novo Post</h2>
+        <form id="post-form">
+            <input type="text" id="title" placeholder="Título" required>
+            <textarea id="content" placeholder="Conteúdo" required></textarea>
+            <input type="text" id="author" placeholder="Autor" required>
+            <button type="submit">Publicar</button>
+        </form>
+    </section>
+
+<!-- Lista de posts -->
+		<section id="blog">
+        <h2>Posts Recentes</h2>
+        <div id="blog-posts"></div>
+    </section>
+
+    <script src="blog.js"></script>
+</body>
+</html>
