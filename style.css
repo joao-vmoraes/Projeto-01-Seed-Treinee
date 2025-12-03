@@ -34,6 +34,18 @@ header{
     min-height: 50px;
 }
 
+header > div  {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+header > div > p {
+    color: white;
+    font-weight: bold;
+}
+
+
 .box-img-header {
     height: 100%;
 }
@@ -62,14 +74,6 @@ nav {
     transition: 0.5s;
 }
 
-button {
-    padding: .6rem;
-    font-size: .9rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -84,6 +88,25 @@ h2 {
     font-size: 3rem;
     padding: 5rem;
     text-align: center;
+}
+
+.link-action {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    padding-inline: 2rem;
+}
+
+.link-action:hover {
+    background-color: #566981;
 }
 
 .Inicio {
@@ -104,13 +127,15 @@ h2 {
     gap: 1rem;
     min-width: 300px;
     color: white;
-}
-
-.Inicio > div> h2{
-    color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 4px;
+    max-width: 90rem;
 }
+
+.Inicio > div > div {
+    margin-top: 2rem;
+}
+
 
 strong {
     color: var(--cyan);
