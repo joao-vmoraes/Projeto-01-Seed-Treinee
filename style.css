@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #fff;
+    --dark1: #34344e;
+    --dark2: #3a415a;
+    --dark3: #566981;
+    --dark4: #89a7b1;
+    --dark5: #cbdad5;
+    --dark6: #2f2f46;
+    --blue:  #708090;
+    --cyan:  #70e3ea;
+}
+
+body {
+    background-color: var(--dark1);
+    height: 100vh;
+    font-family: 'Lato';
+}
+
+header{
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    min-height: 50px;
+}
+
+.box-img-header {
+    height: 100%;
+}
+
+.img-logo{
+    max-width: 80px;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-links:hover{
+    color: var(--dark4);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.Inicio {
+    background-image: url(images/plano_de_fundo.png);
+    min-width: 100px;
+}
+
