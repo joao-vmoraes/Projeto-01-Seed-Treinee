@@ -190,3 +190,12 @@ strong {
     font-size: 1.1rem;
     max-width: 90%; 
 }
+
+.Prototipo {
+    background-color: #3a415a;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 2rem;
+}
