@@ -23,6 +23,33 @@ async function getPosts() {
     }
 }
 
+// POST - Criar post
+async function createPost(data) {
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: {
+                'x-api-key': API_KEY,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+        const newPost = await response.json();
+        alert('Post criado com sucesso!');
+        
+        getPosts();
+        
+        // Atualiza a lista
+        return newPost;
+    } catch (error) {
+        console.error('Erro:', error);
+        alert('Erro ao criar post. Tente novamente.');
+    }
+}
+
 // Exibir posts na página
 function displayPosts(posts) {
     const container = document.getElementById('blog-posts');
