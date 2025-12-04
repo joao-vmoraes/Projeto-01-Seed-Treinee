@@ -191,11 +191,22 @@ strong {
     max-width: 90%; 
 }
 
+/* Quarta seção*/
+
 .Prototipo {
-    background-color: #3a415a;
-    min-height: 900px;
+    /* overlay to reduce background-image opacity */
+    background-image: linear-gradient(#34344ec9, #34344ec9), url(images/prototipo-solucao/nao-formatadas/tela001.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    height: 900px;
     display: flex;
     flex-direction: column; 
     align-items: center;
     padding: 2rem;
+}
+
+#link-prototipo {
+    margin-top: 40px;
+    display: inline-block;
 }
