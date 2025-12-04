@@ -50,6 +50,8 @@ async function createPost(data) {
     }
 }
 
+
+
 // Exibir posts na página
 function displayPosts(posts) {
     const container = document.getElementById('blog-posts');
@@ -67,6 +69,56 @@ function displayPosts(posts) {
         </article>
     `).join('');
 }
+
+// Modificar a função displayPosts para incluir botão de deletar
+function displayPosts(posts) {
+    const container = document.getElementById('blog-posts');
+
+    if (posts.length === 0) {
+        container.innerHTML = '<p>Nenhum post encontrado.</p>';
+        return;
+    }
+        container.innerHTML = posts.map(post => `
+            <article class="post">
+                <h3>${post.title}</h3>
+                <p class="meta">Por ${post.author} em ${new Date(post.createdAt).toLocaleDateString()}</p>
+                <p>${post.content}</p>
+                <button class="btn-delete" onclick= deletePost('${post.id}')>🗑️ Deletar</button>
+            </article>
+            
+    `).join('');
+}
+
+// Função para deletar um post
+async function deletePost(postId) {
+
+    try {
+        const response = await fetch(`${API_URL}/${postId}`, {
+            method: 'DELETE',
+            headers: {
+                'x-api-key': API_KEY,
+                'accept': '*/*'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`Erro: ${response.status}`);
+        }
+
+        console.log('Post deletado com sucesso!');
+        alert('Post deletado com sucesso!');
+
+			// Atualizar a lista de posts
+			getPosts();
+
+    } catch (error) {
+        console.error('Erro ao deletar post:', error);
+        alert('Erro ao deletar post. Tente novamente.');
+    }
+}
+
+
+
 
 // Event listener do formulário
 document.getElementById('post-form').addEventListener('submit', async (e) => {
