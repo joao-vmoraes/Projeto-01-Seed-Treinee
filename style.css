@@ -21,7 +21,6 @@ body {
     background-color: var(--dark1);
     height: 100vh;
     font-family: 'Lato';
-    padding: 0px;
 }
 
 header{
@@ -78,7 +77,8 @@ nav {
 main {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    padding: 0px;
+    margin: 0px;
 }
 
 section {
@@ -222,6 +222,7 @@ strong {
     margin-top: 40px;
     display: inline-block;
 }
+
 /* impacto */ 
 .Impacto {
     background-color: var(--dark6);
@@ -232,7 +233,6 @@ strong {
     flex-direction: column;
     color: white;
     padding: 2rem;
-    width: 1280px;
 }
 
 .img-odd3 {
