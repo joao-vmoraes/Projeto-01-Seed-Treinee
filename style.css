@@ -203,7 +203,13 @@ strong {
     display: flex;
     flex-direction: column; 
     align-items: center;
+    justify-content: center;
     padding: 2rem;
+}
+
+.Prototipo p {
+    text-align: center; 
+    font-size: 26px;
 }
 
 #link-prototipo {
