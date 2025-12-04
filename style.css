@@ -216,6 +216,7 @@ strong {
 #link-prototipo {
     margin-top: 40px;
     display: inline-block;
+}
 /* impacto */ 
 .Impacto {
     background-color: var(--dark6);
@@ -266,4 +267,40 @@ strong {
     flex-wrap: wrap;
     gap: 2rem;
     margin: 40px;
+}
+
+/*Sexta Seção*/
+
+.Blog {
+    background-color: var(--dark5);
+    height: 900px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: black;
+}
+
+.Blog article {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.secao-blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 372px;
+    height: 330px;
+    background-color: var(--dark4);
+    font-size: 24px;
+}
+
+.Blog div {
+    color: black;
+    border-color: black;
+    margin-top: 50px;
 }
