@@ -21,6 +21,7 @@ body {
     background-color: var(--dark1);
     height: 100vh;
     font-family: 'Lato';
+    padding: 0px;
 }
 
 header{
@@ -85,10 +86,14 @@ section {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 32px;
     padding: 5rem;
     text-align: center;
     color: #70e3ea; 
+}
+
+h3 {
+    font-size: 26px; 
 }
 
 .link-action {
@@ -216,17 +221,18 @@ strong {
 #link-prototipo {
     margin-top: 40px;
     display: inline-block;
+}
 /* impacto */ 
 .Impacto {
     background-color: var(--dark6);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    min-height: 750px;
+    min-height: 700px;
     flex-direction: column;
     color: white;
     padding: 2rem;
-    width: 100%;
+    width: 1280px;
 }
 
 .img-odd3 {
@@ -266,4 +272,49 @@ strong {
     flex-wrap: wrap;
     gap: 2rem;
     margin: 40px;
+}
+
+/*Sexta Seção*/
+
+.Blog {
+    background-color: var(--dark5);
+    height: 900px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: black;
+}
+
+.Blog article {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+}
+
+.secao-blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 372px;
+    height: 330px;
+    background-color: var(--dark4);
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#ver-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+#botao-ver-blog {
+    color: black;
+    border-color: black;
 }
