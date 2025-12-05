@@ -409,8 +409,8 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    max-width: 1200px;
+    width: auto;
+    max-width: 1400px;
     margin-top: 3rem;
     gap: 3rem;
 }
@@ -424,7 +424,7 @@ strong {
 .blog-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /*justify-content: center;*/
     gap: 20px;
     margin-top: 20px;
 }
@@ -433,11 +433,13 @@ strong {
 .post-card {
     background-color: var(--blue1);
     padding: 15px;
-    width: 300px;
+    width: 20vw;
     text-align: left;
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
     justify-content: space-between;
+
     border-radius: 0px; 
     color: var(--black);
     border: 1px solid;
@@ -451,6 +453,7 @@ strong {
     margin-bottom: 5px;
     font-weight: bold;
     color: var(--blue5);
+    width: 100%;
 }
 
 .post-date {
@@ -459,21 +462,26 @@ strong {
     display: block;
     margin-bottom: 10px;
     padding-bottom: 5px;
+    width: 100%;
 }
 
 .post-author {
     font-size: 0.9rem;
     margin: 5px 0;
     color: var(--blue4);
+    width: 100%;
 }
 
 .post-content {
     font-size: 0.95rem;
     line-height: 1.3;
     margin-bottom: 15px;
+    color: var(--black);
 }
 
 .btn-delete {
+    align-self: flex-end;
+
     background-color: var(--blue4);
     border: 1px solid white;
     color: white;
@@ -489,7 +497,7 @@ strong {
 .form-area {
     background-color: none;
     padding: 20px;
-    width: auto;
+    width: 20vw;
     max-width: 600px;
     border-radius: 0; 
 }
@@ -519,6 +527,7 @@ strong {
     color: var(--white);
     background-color: var(--blue4);
     text-transform: capitalize;
+    width: 20vw;
 }
 
 footer {
