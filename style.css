@@ -86,10 +86,12 @@ section {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 48px;
     padding: 5rem;
     text-align: center;
     color: #70e3ea; 
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -121,30 +123,34 @@ h4 {
 
 .Inicio {
     background-color: #3a415a;
-    background-size: 10%;
+    background-image: url(images/prototipo-solucao/Design\ sem\ nome\ \(1\).png);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    min-height: 650px;
+    min-height: 900px;
 }
 
 .Inicio > div {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    min-width: 300px;
+    gap: 25px;
+    max-width: 900px;
     color: white;
     text-align: center;
     letter-spacing: 4px;
-    max-width: 90rem;
+    gap: 25px;
 }
 
 .Inicio > div > div {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
 }
-
 
 strong {
     color: var(--cyan);
