@@ -1,5 +1,5 @@
-# Back-End
-### Métodos utilizados para funcionamento do Blog.
+# *APi RESTful*, Comunicação dos servidores(Back-End) com a Landing Page(Front-End).
+### Endpoints utilizados para funcionamento do Blog.
 #### 1. Método GET
 - Esse método é essencial, pois quando há o recarregamento ou a abertura da página, a APi traz todos os itens salvos em .json para a Landing Page, no caso, o autor, a descrição e título.
 - Analogia: O GET é como se o garçom(APi) trouxesse o cardápio(GET) de um restaurante, pois ele mostra tudo que tem ali.
@@ -13,3 +13,6 @@ atualizado automáticamente, de modo que, aquele .json deletado, não será tran
 transmitida no blog.
 - Analogia: O DELETE é como se eu tivesse cancelado(DELETE) um pedido feito, ou seja, como foi dito na analogia do POST, o garçom(APi) salva essa informação, e quando o DELETE(Cancelamento do pedido) entra em ação
 o garçom remove a informação salva(.json).
+### Integração
+- A APi de blog foi feita com *NestJS* e *Prisma* e foi feita pela *Seed a Bit*, deixando bem claro como utilizar os endpoints, e trazendo exemplos de como seria salvo os .json's.
+ 
