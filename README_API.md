@@ -15,4 +15,5 @@ transmitida no blog.
 o garçom remove a informação salva(.json).
 ### Integração
 - A APi de blog foi feita com *NestJS* e *Prisma* e foi feita pela *Seed a Bit*, deixando bem claro como utilizar os endpoints, e trazendo exemplos de como seria salvo os .json's.
+- Acesse a [Documentação da *APi RESTful* de Blog](https://blog-api.seedabit.org.br/api/docs#).
  
