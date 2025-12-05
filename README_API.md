@@ -1,0 +1,11 @@
+# Back-End
+### Métodos utilizados para funcionamento do Blog.
+#### 1. Método GET
+- Esse método é essencial, pois quando há o recarregamento ou a abertura da página, a APi traz todos os itens salvos em .json para a Landing Page, no caso, o autor, a descrição e título.
+#### 2. Método POST
+- Assim como o GET, o POST é muito importante, pois quando alguém preenche as entradas do blog e aperta o botão de publicar,
+a APi salva as informações em formato .json e as guarda como se fosse um "Banco de Dados", deixando "de bandeja" para o método GET.
+#### 3. Método DELETE
+- O DELETE serve para apagar posts no blog, ou seja, quando a pessoa apertar o botão de deletar, a APi vai no "Banco de Dados" e deleta as informações salvas no escopo do .json, então, logo em seguida o site será
+atualizado automáticamente, de modo que, aquele .json deletado, não será transmitido, pois ele foi apagado. Então o metodo GET não vai encontrar esse escopo deletado, de forma que essa informação apagada não será
+transmitida no blog. 
