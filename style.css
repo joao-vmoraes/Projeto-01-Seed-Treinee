@@ -7,25 +7,24 @@
 
 
 :root{
-    --white: #fff;
-    --dark1: #34344e;
-    --dark2: #3a415a;
-    --dark3: #566981;
-    --dark4: #89a7b1;
-    --dark5: #cbdad5;
-    --dark6: #2f2f46;
-    --blue:  #708090;
-    --cyan:  #70e3ea;
+    --white: #ffffff;
+    --blue1: #DADCED;
+    --blue2: #989DC2;
+    --blue3: #536499;
+    --blue4: #293D70;
+    --blue5: #0D285C;
+    --blue6: #031742;
+    --black: #000000;
 }
 
 body {
-    background-color: var(--dark1);
+    background-color: var(--white);
     height: 100vh;
     font-family: 'Lato';
 }
 
 header{
-    background-color: var(--dark6);
+    background-color: var(--blue5);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -82,15 +81,11 @@ main {
     margin: 0px;
 }
 
-section {
-    padding-bottom: 4rem;
-}
-
 h2 {
     font-size: 48px;
     padding: 5rem;
     text-align: center;
-    color: #70e3ea; 
+    color: var(--blue4); 
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -103,10 +98,25 @@ h4 {
     font-weight: normal;
 }
 
-.link-action {
+.link-action-claro {
     background-color: transparent;
     border: 1px solid var(--white);
     color: var(--white);
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    padding-inline: 2rem;
+}
+
+.link-action-escuro {
+    background-color: transparent;
+    border: 1px solid var(--black);
+    color: var(--black);
     padding: .6rem;
     font-size: .9rem;
     border-radius: 6px;
@@ -123,8 +133,8 @@ h4 {
 }
 
 .Inicio {
-    background-color: #3a415a;
-    background-image: url(images/prototipo-solucao/Design\ sem\ nome\ \(1\).png);
+    background-color: var(--white);
+    background-image: url(images/fundo-logo.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -134,12 +144,16 @@ h4 {
     min-height: 900px;
 }
 
+.Inicio strong {
+    color: var(--blue6);
+}
+
 .Inicio > div {
     display: flex;
     flex-direction: column;
     gap: 25px;
     max-width: 900px;
-    color: white;
+    color: var(--black);
     text-align: center;
     letter-spacing: 4px;
     gap: 25px;
@@ -151,23 +165,24 @@ h4 {
     flex-direction: row;
     justify-content: center;
     gap: 60px;
+    color: var(--black);
+    border-color: var(--black);
 }
 
 strong {
-    color: var(--cyan);
-}
-
-/* um strong mas com outra cor*/
-.escuro {
-    color: rgb(75, 190, 243);
+    color: var(--blue2);
+    font-weight: bolder;
 }
 
 /* Segunda seção*/ 
 
 
 .Sobre {
-    background-color: #566981;
-    min-height: 950px;
+    background-color: var(--blue5);
+    background-image: url(images/fundo-sobre.png);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 900px;
     padding: 2rem ;
     display: flex;
     flex-direction: column; 
@@ -175,23 +190,28 @@ strong {
 }
 
 .Sobre h2 {
-    color: #70e3ea;
+    color: var(--white);
 }
 
-.Sobre p:first-of-type {
+.titulo-box-sobre {
+    color: white;
+    font-weight: bold;
+}
+
+.Sobre p {
     max-width: 800px; 
     text-align: center; 
     margin-bottom: 40px; 
     color: white;
-    font-size: 1.2rem;
-    padding: 0 20px;
+    font-size: 24px;
+    padding: 20px;
 }
 
-.container-boxes {
+.container-boxes-sobre {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
     width: 100%;
 }
 
@@ -212,11 +232,19 @@ strong {
     max-width: 90%; 
 }
 
+#sobre-resultado {
+    color: var(--blue1);
+}
+
 /* Quarta seção*/
 
 .Prototipo {
     /* overlay to reduce background-image opacity */
     color: var(--white);
+    background-color: var(--blue5);
+    background-image: url(images/fundo-prototipo.png);
+    background-size: cover;
+    background-attachment: fixed;
     height: 900px;
     display: flex;
     flex-direction: column; 
@@ -225,19 +253,34 @@ strong {
     padding: 2rem;
 }
 
+.Prototipo h2 {
+    color: var(--white);
+}
+
 .Prototipo p {
     text-align: center; 
     font-size: 26px;
+    margin-bottom: 20px;
 }
 
-#link-prototipo {
-    margin-top: 40px;
-    display: inline-block;
+#container-prototipo {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+}
+
+.box-prototipo {
+    background-color: var(--blue2);
+    border-radius: 8px;
 }
 
 /* impacto */ 
 .Impacto {
-    background-color: var(--dark6);
+    background-color: var(--white);
+    background-image: url(images/fundo-logo.png);
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -245,6 +288,16 @@ strong {
     flex-direction: column;
     color: white;
     padding: 2rem;
+}
+
+.Impacto strong {
+    color: var(--blue4);
+}
+
+#subtitulo-impacto {
+    color: var(--blue6);
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .img-odd3 {
@@ -283,14 +336,15 @@ strong {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 40px;
 }
 
 /*Sexta Seção*/
 
 .Blog {
-    background-color: var(--dark2);
-    height: 2000px;
+    background-color: var(--white);
+    background-image: url(images/fundo-logo.png);
+    background-size: cover;   
+    ~min-height: 900px;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -444,7 +498,7 @@ strong {
 }
 
 footer {
-    background-color: var(--dark6);
+    background-color: var(--blue5);
     min-height: 100px;
     display: flex;
     flex-direction: row;
