@@ -19,7 +19,7 @@ o garçom remove a informação salva(.json).
 #### 🛠️ Tecnologias e Implementação
 - O projeto foi desenvolvido utilizando Node.js para criar o ambiente do servidor (Back-end). Isso permite que a API receba requisições HTTP reais e manipule os dados diretamente no sistema de arquivos.
 #### 🔍 Exemplo de Requisição
-- Abaixo, um exemplo de como implementei a função que busca os posts (Método GET) para renderizar na tela:
+- Abaixo, um exemplo de como foi implementado a função que busca os posts (Método GET) para renderizar na tela:
 ``` javascript
 async function getPosts() {
     try {
