@@ -232,6 +232,10 @@ strong {
     max-width: 90%; 
 }
 
+#sobre-resultado {
+    color: var(--blue1);
+}
+
 /* Quarta seção*/
 
 .Prototipo {
@@ -275,8 +279,9 @@ strong {
 }
 
 #subtitulo-impacto {
-    color: var(--black);
+    color: var(--blue6);
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .img-odd3 {
