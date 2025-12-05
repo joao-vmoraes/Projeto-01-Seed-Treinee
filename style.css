@@ -273,12 +273,25 @@ strong {
 
 .box-prototipo {
     background-color: var(--blue2);
-    border-radius: 8px;
+    border-radius: 16px;
+}
+ #strong-prototipo-subtitulo {
+    color: var(--white);
+ }
+
+.box-prototipo img {
+    border-top: 1px solid var(--blue6);
 }
 
 .titulo-box-prototipo {
     margin-top: 15px;
     font-weight: bold;
+    color: var(--blue6);
+
+}
+
+.texto-box-prototipo {
+    color: var(--blue5);
 }
 
 /* impacto */ 
@@ -355,7 +368,7 @@ strong {
     align-items: center;
     justify-content: center;
     padding: 0;
-    color: rgb(255, 255, 255);
+    color: var(--black);
 }
 
 .Blog article {
@@ -371,24 +384,16 @@ strong {
     text-align: center;
     width: 372px;
     height: 330px;
-    background-color: rgb(155, 201, 209);
-    font-size: 16px;
-    padding: 5px;
+    background-color: var(--blue1);
+    font-size: 20px;
+    padding: 20px;
     border-radius: 8px;
-    margin: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-#ver-blog {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-    gap: 10px;
-}
-
-#botao-ver-blog {
-    color: black;
-    border-color: black;
+.secao-blog strong {
+    color: var(--blue5);
 }
 
 .dynamic-blog-container {
@@ -404,6 +409,7 @@ strong {
 .posts-area {
     width: 100%;
     text-align: center;
+    color: var(--black);
 }
 
 .blog-grid {
@@ -416,7 +422,7 @@ strong {
 
 /* card do post */
 .post-card {
-    background-color: var(--dark6);
+    background-color: var(--blue1);
     padding: 15px;
     width: 300px;
     text-align: left;
@@ -424,19 +430,22 @@ strong {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 0px; 
-    color: var(--white);
+    color: var(--black);
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: var(--black);
 }
 
 .post-header h4 {
-    color: var(--cyan);
     font-size: 1.2rem;
     margin-bottom: 5px;
     font-weight: bold;
+    color: var(--blue5);
 }
 
 .post-date {
     font-size: 0.8rem;
-    color: #ccc;
+    color: var(--blue5);
     display: block;
     margin-bottom: 10px;
     padding-bottom: 5px;
@@ -445,17 +454,17 @@ strong {
 .post-author {
     font-size: 0.9rem;
     margin: 5px 0;
+    color: var(--blue4);
 }
 
 .post-content {
     font-size: 0.95rem;
     line-height: 1.3;
     margin-bottom: 15px;
-    color: #e0e0e0;
 }
 
 .btn-delete {
-    background-color: #a00;
+    background-color: var(--blue4);
     border: 1px solid white;
     color: white;
     padding: 5px 10px;
@@ -478,7 +487,7 @@ strong {
 .blog-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
     margin-top: 15px;
 }
 
@@ -488,18 +497,20 @@ strong {
     color: black; 
     padding: 8px;
     border-radius: 2px; 
+    border: 1px solid var(--black);
     font-family: sans-serif;
 }
 
 .blog-form button {
-    margin-top: 10px;
     width: 100%;
     background-color: var(--dark6);
-    color: white;
     padding: 10px;
     cursor: pointer;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
+    color: var(--white);
+    background-color: var(--blue4);
+    text-transform: capitalize;
 }
 
 footer {
