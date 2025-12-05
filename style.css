@@ -85,7 +85,7 @@ h2 {
     font-size: 48px;
     padding: 5rem;
     text-align: center;
-    color: var(--blue6); 
+    color: var(--blue4); 
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -98,10 +98,25 @@ h4 {
     font-weight: normal;
 }
 
-.link-action {
+.link-action-claro {
     background-color: transparent;
     border: 1px solid var(--white);
     color: var(--white);
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    padding-inline: 2rem;
+}
+
+.link-action-escuro {
+    background-color: transparent;
+    border: 1px solid var(--black);
+    color: var(--black);
     padding: .6rem;
     font-size: .9rem;
     border-radius: 6px;
@@ -119,7 +134,7 @@ h4 {
 
 .Inicio {
     background-color: var(--white);
-    background-image: url(images/fundo-inicio.png);
+    background-image: url(images/fundo-logo.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -129,12 +144,16 @@ h4 {
     min-height: 900px;
 }
 
+.Inicio strong {
+    color: var(--blue6);
+}
+
 .Inicio > div {
     display: flex;
     flex-direction: column;
     gap: 25px;
     max-width: 900px;
-    color: white;
+    color: var(--black);
     text-align: center;
     letter-spacing: 4px;
     gap: 25px;
@@ -146,15 +165,13 @@ h4 {
     flex-direction: row;
     justify-content: center;
     gap: 60px;
+    color: var(--black);
+    border-color: var(--black);
 }
 
 strong {
-    color: var(--blue3);
-}
-
-/* um strong mas com outra cor*/
-.escuro {
-    color: rgb(75, 190, 243);
+    color: var(--blue2);
+    font-weight: bolder;
 }
 
 /* Segunda seção*/ 
@@ -173,23 +190,28 @@ strong {
 }
 
 .Sobre h2 {
-    color: #70e3ea;
+    color: var(--white);
 }
 
-.Sobre p:first-of-type {
+.titulo-box-sobre {
+    color: white;
+    font-weight: bold;
+}
+
+.Sobre p {
     max-width: 800px; 
     text-align: center; 
     margin-bottom: 40px; 
     color: white;
-    font-size: 1.2rem;
-    padding: 0 20px;
+    font-size: 24px;
+    padding: 20px;
 }
 
-.container-boxes {
+.container-boxes-sobre {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
     width: 100%;
 }
 
@@ -237,7 +259,7 @@ strong {
 /* impacto */ 
 .Impacto {
     background-color: var(--white);
-    background-image: url(images/fundo-inicio.png);
+    background-image: url(images/fundo-logo.png);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -246,6 +268,15 @@ strong {
     flex-direction: column;
     color: white;
     padding: 2rem;
+}
+
+.Impacto strong {
+    color: var(--blue4);
+}
+
+#subtitulo-impacto {
+    color: var(--black);
+    font-size: 24px;
 }
 
 .img-odd3 {
@@ -284,14 +315,13 @@ strong {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 40px;
 }
 
 /*Sexta Seção*/
 
 .Blog {
     background-color: var(--white);
-    background-image: url(images/fundo-inicio.png);
+    background-image: url(images/fundo-logo.png);
     background-size: cover;   
     ~min-height: 900px;
     display: flex;
