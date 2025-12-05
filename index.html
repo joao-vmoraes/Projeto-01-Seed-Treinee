@@ -85,12 +85,12 @@
             </div>
         </section>
 
-        <section id="Blog" class="Blog"> <!--Aplicar API aqui-->
+        <section id="Blog" class="Blog">
             <h2>SEÇÃO DE BLOGS</h2>
 
-            <h4>Conteúdos sobre Tecnologia e Segurança Pública</h4>
+            <h4>Destaques</h4>
 
-            <article>
+            <article class="static-articles">
                 <div class="secao-blog">
                     <p>Como a <strong class="escuro">análise de dados</strong> pode transformar o patrulhamento urbano. Entenda como padrões de criminalidade ajudam a construir rotas mais eficientes.</p>
                 </div>
@@ -100,15 +100,28 @@
                 </div>
 
                 <div class="secao-blog">
-                    <p><strong class="escuro">Uso de drones e câmeras corporais</strong>: um novo nível de transparência. Benefícios e impacto na segurança e na confiança pública. LGPD e Segurança Pública: como proteger dados com responsabilidade.</p>
+                    <p><strong class="escuro">Uso de drones e câmeras corporais</strong>: um novo nível de transparência. Benefícios e impacto na segurança e na confiança pública.</p>
                 </div>
             </article>
 
-            <div id="ver-blog">
-                <h4>Veja como o Conecta Patrulha segue as diretrizes da Lei Geral de Proteção de Dados.</h4>
-                <div id="botao-ver-blog" >
-                    <a class="link-action" href="#">Ver Blog</a>
+            <div class="dynamic-blog-container">
+                <div class="posts-area">
+                    <h2>Últimas Atualizações</h2>
+                    <div id="blog-posts" class="blog-grid">
+                        <p>Carregando posts...</p>
+                    </div>
                 </div>
+
+                <div class="form-area">
+                    <h3>Criar Novo Post</h3>
+                    <form id="post-form" class="blog-form">
+                        <input type="text" id="title" placeholder="Título " required>
+                        <textarea id="content" placeholder="Conteúdo..." rows="5" required></textarea>
+                        <input type="text" id="author" placeholder="Autor" required>
+                        <button type="submit" class="link-action">Publicar</button>
+                    </form>
+                </div>
+
             </div>
         </section>
 
@@ -118,6 +131,6 @@
         <h4>Conecta Patrulha — Patrulhamento Inteligente e Integrado</h4>
         <p> © 2025 | Todos os direitos reservados</p>
     </footer>
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
