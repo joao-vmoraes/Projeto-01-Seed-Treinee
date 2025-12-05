@@ -18,7 +18,7 @@
 }
 
 body {
-    background-color: var(--dark1);
+    background-color: var(--white);
     height: 100vh;
     font-family: 'Lato';
 }
@@ -81,15 +81,11 @@ main {
     margin: 0px;
 }
 
-section {
-    padding-bottom: 4rem;
-}
-
 h2 {
     font-size: 48px;
     padding: 5rem;
     text-align: center;
-    color: #70e3ea; 
+    color: var(--blue6); 
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -153,7 +149,7 @@ h4 {
 }
 
 strong {
-    color: var(--cyan);
+    color: var(--blue3);
 }
 
 /* um strong mas com outra cor*/
