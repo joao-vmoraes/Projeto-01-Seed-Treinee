@@ -374,6 +374,7 @@ strong {
 .Blog article {
     display: flex;
     gap: 36px;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -523,4 +524,164 @@ footer {
     gap: 20px;
     color: white;
     font-size: 16px;
+}
+
+/*RESPONSIVIDADE (MOBILE & TABLET)*/
+
+@media (max-width: 768px) {
+
+    /* --- Ajustes Gerais --- */
+    h2 {
+        font-size: 2rem;        /* Reduz titulos gigantes */
+        padding: 2rem 1rem;     /* Remove padding excessivo */
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;        /* Texto de leitura mais confortável */
+        padding: 0 1rem;        /* Garante margem nas laterais */
+    }
+
+    /* --- Cabeçalho (Header) --- */
+    header {
+        flex-direction: column; /* Empilha Logo e Menu */
+        padding: 1rem;
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column; /* Empilha os links */
+        gap: 1rem;
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: block;
+        padding: 10px;          /* Aumenta área de toque para o dedo */
+        font-size: 1.2rem;
+    }
+
+    /* --- Seção Início (Home) --- */
+    .Inicio {
+        padding-top: 2rem;
+        min-height: auto;       /* Remove altura fixa de 900px */
+        padding-bottom: 3rem;
+    }
+
+    .Inicio > div {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    /* Botões da Home */
+    .Inicio > div > div {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .link-action-claro, 
+    .link-action-escuro {
+        width: 100%;            /* Botões ocupam largura total no celular */
+        max-width: 300px;
+        box-sizing: border-box; /* Garante que padding não estoure a largura */
+    }
+
+    /* --- Seção Sobre --- */
+    .Sobre {
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+
+    .container-boxes-sobre {
+        flex-direction: column; /* Empilha os cards coloridos */
+        align-items: center;
+    }
+
+    .box-sobre {
+        max-width: 100%;        /* Ocupa a tela toda */
+        width: 100%;
+    }
+
+    /* --- Seção Protótipo --- */
+    .Prototipo {
+        height: auto;           /* Remove altura fixa */
+        padding: 3rem 1rem;
+    }
+
+    #container-prototipo {
+        flex-direction: column; /* Imagem em cima, texto embaixo */
+        gap: 2rem;
+    }
+
+    .box-prototipo {
+        width: 100%;
+    }
+
+    .box-prototipo img {
+        width: 100%;            /* Garante que a imagem não vaze da tela */
+        height: auto;
+    }
+
+    /* --- Seção Impacto --- */
+    .Impacto {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .div-box-impacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-odd3, .div-odd16 {
+        max-width: 100%;
+        height: auto;           /* Texto pode crescer se precisar */
+    }
+
+    /* --- Seção Blog --- */
+    .Blog {
+        padding: 2rem 0;
+        min-height: auto;
+    }
+
+    .Blog article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Correção Crítica da Largura Fixa do Blog */
+    .secao-blog {
+        width: 90%;             /* Troca 372px fixo por porcentagem */
+        max-width: 400px;
+        height: auto;
+    }
+
+    .blog-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .form-area {
+        width: 90%;
+    }
+
+    /* --- Rodapé (Footer) --- */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
 }
