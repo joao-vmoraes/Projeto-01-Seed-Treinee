@@ -343,13 +343,13 @@ strong {
     gap: 2rem;
 }
 
-/*Sexta Seção*/
+/*Sexta Seção: Blog*/
 
 .Blog {
     background-color: var(--white);
     background-image: url(images/fundo-logo.png);
     background-size: cover;   
-    ~min-height: 900px;
+    min-height: 900px;
     display: flex;
     flex-direction: column; 
     align-items: center;
