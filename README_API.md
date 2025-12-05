@@ -16,4 +16,30 @@ o garçom remove a informação salva(.json).
 ### Integração
 - A APi de blog foi construída com *NestJS* e *Prisma* e foi feita pela *Seed a Bit*, deixando bem claro como utilizar os endpoints, e trazendo exemplos de como seria salvo os .json's.
 - Acesse a [Documentação da *APi RESTful* de Blog](https://blog-api.seedabit.org.br/api/docs#).
- 
+#### 🛠️ Tecnologias e Implementação
+- O projeto foi desenvolvido utilizando Node.js para criar o ambiente do servidor (Back-end). Isso permite que a API receba requisições HTTP reais e manipule os dados diretamente no sistema de arquivos.
+#### 🔍 Exemplo de Requisição
+- Abaixo, um exemplo de como implementei a função que busca os posts (Método GET) para renderizar na tela:
+``` javascript
+async function getPosts() {
+    try {
+        const response = await fetch(API_URL, {
+            method: 'GET',
+            headers: {
+                'x-api-key': API_KEY
+            }
+        });
+
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+        const posts = await response.json();
+        displayPosts(posts);
+    } catch (error) {
+        console.error('Erro:', error);
+        document.getElementById('blog-posts').innerHTML =
+            '<p class="error">Erro ao carregar posts.</p>';
+    }
+}
+```
+#### 💻 Tratamento de Erros 
+- Foi implementado blocos try/catch para garantir que, caso a API esteja fora do ar (o garçom ficou fora do ar), o usuário receba um aviso no console ou na tela, em vez de o site simplesmente travar.
