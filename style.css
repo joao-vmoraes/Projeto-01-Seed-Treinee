@@ -242,6 +242,9 @@ strong {
     /* overlay to reduce background-image opacity */
     color: var(--white);
     background-color: var(--blue5);
+    background-image: url(images/fundo-prototipo.png);
+    background-size: cover;
+    background-attachment: fixed;
     height: 900px;
     display: flex;
     flex-direction: column; 
@@ -250,14 +253,27 @@ strong {
     padding: 2rem;
 }
 
+.Prototipo h2 {
+    color: var(--white);
+}
+
 .Prototipo p {
     text-align: center; 
     font-size: 26px;
+    margin-bottom: 20px;
 }
 
-#link-prototipo {
-    margin-top: 40px;
-    display: inline-block;
+#container-prototipo {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+}
+
+.box-prototipo {
+    background-color: var(--blue2);
+    border-radius: 8px;
 }
 
 /* impacto */ 
