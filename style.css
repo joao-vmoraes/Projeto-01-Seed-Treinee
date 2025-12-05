@@ -211,9 +211,6 @@ strong {
 
 .Prototipo {
     /* overlay to reduce background-image opacity */
-    background-image: linear-gradient(#34344ec9, #34344ec9), url(images/prototipo-solucao/nao-formatadas/tela001.png);
-    background-size: cover;
-    background-position: center;
     color: var(--white);
     height: 900px;
     display: flex;
