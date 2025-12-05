@@ -212,7 +212,7 @@ strong {
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    width: 100%;
+    width: auto;
 }
 
 .box-sobre {
@@ -266,14 +266,15 @@ strong {
 #container-prototipo {
     display: flex;
     flex-direction: row; 
-    align-items: center;
     justify-content: center;
-    gap: 44px;
+    gap: 3vw;
+    width: auto;
 }
 
 .box-prototipo {
     background-color: var(--blue2);
     border-radius: 16px;
+    width: auto;
 }
  #strong-prototipo-subtitulo {
     color: var(--white);
@@ -349,7 +350,7 @@ strong {
 }
 
 .div-box-impacto {
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -369,6 +370,7 @@ strong {
     justify-content: center;
     padding: 0;
     color: var(--black);
+    width: auto;
 }
 
 .Blog article {
@@ -383,18 +385,24 @@ strong {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 372px;
-    height: 330px;
+    max-width: 372px;
+    max-height: 330px;
+    min-height: 250px;
     background-color: var(--blue1);
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    width: auto;
 }
 
 .secao-blog strong {
     color: var(--blue5);
+}
+
+.secao-blog p {
+    width: auto;
 }
 
 .dynamic-blog-container {
@@ -435,6 +443,7 @@ strong {
     border: 1px solid;
     border-radius: 8px;
     border-color: var(--black);
+    min-height: 250px;
 }
 
 .post-header h4 {
@@ -478,9 +487,9 @@ strong {
 }
 
 .form-area {
-    background-color: var(--dark2);
+    background-color: none;
     padding: 20px;
-    width: 100%;
+    width: auto;
     max-width: 600px;
     border-radius: 0; 
 }
@@ -503,11 +512,9 @@ strong {
 }
 
 .blog-form button {
-    width: 100%;
     background-color: var(--dark6);
     padding: 10px;
     cursor: pointer;
-    text-transform: uppercase;
     font-weight: normal;
     color: var(--white);
     background-color: var(--blue4);
@@ -543,7 +550,7 @@ footer {
 
     p {
         font-size: 1rem;        /* Texto de leitura mais confortável */
-        padding: 0 1rem;        /* Garante margem nas laterais */
+        padding: 0 1rem;
     }
 
     /* --- Cabeçalho (Header) --- */
@@ -554,28 +561,28 @@ footer {
     }
 
     nav {
-        flex-direction: column; /* Empilha os links */
         gap: 1rem;
         margin-top: 1rem;
-        width: 100%;
+        height: auto;
+        width: auto;
         text-align: center;
     }
 
     .nav-links {
         display: block;
-        padding: 10px;          /* Aumenta área de toque para o dedo */
+        padding: 10px;
         font-size: 1.2rem;
     }
 
     /* --- Seção Início (Home) --- */
     .Inicio {
         padding-top: 2rem;
-        min-height: auto;       /* Remove altura fixa de 900px */
+        min-height: auto;
         padding-bottom: 3rem;
     }
 
     .Inicio > div {
-        width: 100%;
+        width: auto;
         padding: 0 1rem;
     }
 
@@ -588,9 +595,9 @@ footer {
 
     .link-action-claro, 
     .link-action-escuro {
-        width: 100%;            /* Botões ocupam largura total no celular */
+        width: auto;
         max-width: 300px;
-        box-sizing: border-box; /* Garante que padding não estoure a largura */
+        box-sizing: border-box;
     }
 
     /* --- Seção Sobre --- */
@@ -600,32 +607,32 @@ footer {
     }
 
     .container-boxes-sobre {
-        flex-direction: column; /* Empilha os cards coloridos */
+        flex-direction: column;
         align-items: center;
     }
 
     .box-sobre {
-        max-width: 100%;        /* Ocupa a tela toda */
-        width: 100%;
+        max-width: 100%;
+        width: auto;
     }
 
     /* --- Seção Protótipo --- */
     .Prototipo {
-        height: auto;           /* Remove altura fixa */
+        height: auto;
         padding: 3rem 1rem;
     }
 
     #container-prototipo {
-        flex-direction: column; /* Imagem em cima, texto embaixo */
+        flex-direction: column;
         gap: 2rem;
     }
 
     .box-prototipo {
-        width: 100%;
+        width: 95vw;
     }
 
     .box-prototipo img {
-        width: 100%;            /* Garante que a imagem não vaze da tela */
+        width: 95vw;
         height: auto;
     }
 
@@ -642,7 +649,7 @@ footer {
 
     .div-odd3, .div-odd16 {
         max-width: 100%;
-        height: auto;           /* Texto pode crescer se precisar */
+        height: auto;
     }
 
     /* --- Seção Blog --- */
@@ -658,7 +665,7 @@ footer {
 
     /* Correção Crítica da Largura Fixa do Blog */
     .secao-blog {
-        width: 90%;             /* Troca 372px fixo por porcentagem */
+        width: auto;
         max-width: 400px;
         height: auto;
     }
@@ -669,12 +676,12 @@ footer {
     }
 
     .post-card {
-        width: 90%;
+        width: 95vw;
         max-width: 400px;
     }
 
     .form-area {
-        width: 90%;
+        width: 80vw;
     }
 
     /* --- Rodapé (Footer) --- */
