@@ -68,7 +68,7 @@ O projeto segue as diretrizes da **Lei Geral de Proteção de Dados (LGPD)**, ga
 
 ### Link da nossa landing page
 
-xxxxxxxxxxxxxxxxxxxxxxx
+[Landing Page](https://joao-vmoraes.github.io/Projeto-01-Seed-Treinee/)
 
 ### 📑 Estrutura da Página
 
