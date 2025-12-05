@@ -1,8 +1,6 @@
-// Configuração da API
 const API_URL = 'https://blog-api.seedabit.org.br/api/posts';
-const API_KEY = 'group-2-os6vfzou'; // SUBSTITUA pela sua chave
+const API_KEY = 'group-2-os6vfzou'; 
 
-// GET - Buscar posts
 async function getPosts() {
     try {
         const response = await fetch(API_URL, {
@@ -52,23 +50,6 @@ async function createPost(data) {
 
 
 
-// Exibir posts na página
-function displayPosts(posts) {
-    const container = document.getElementById('blog-posts');
-
-    if (posts.length === 0) {
-        container.innerHTML = '<p>Nenhum post encontrado.</p>';
-        return;
-    }
-
-    container.innerHTML = posts.map(post => `
-        <article class="post">
-            <h3>${post.title}</h3>
-            <p class="meta">Por ${post.author} em ${new Date(post.createdAt).toLocaleDateString()}</p>
-            <p>${post.content}</p>
-        </article>
-    `).join('');
-}
 
 // Modificar a função displayPosts para incluir botão de deletar
 function displayPosts(posts) {
@@ -89,7 +70,7 @@ function displayPosts(posts) {
     `).join('');
 }
 
-// Função para deletar um post
+// DELETE - deletar posts
 async function deletePost(postId) {
 
     try {
