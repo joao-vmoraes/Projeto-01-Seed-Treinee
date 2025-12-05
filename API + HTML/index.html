@@ -38,12 +38,21 @@
         <section id="Sobre" class="Sobre">
             <h2>Sobre o Projeto</h2>
             <p>O Conecta Patrulha é uma plataforma Web + Mobile projetada para elevar o nível da segurança pública em Recife. A solução entrega <strong>rotas inteligentes</strong> para policiais em patrulha e um painel completo para policiais administrativos monitorarem equipes e tomarem decisões estratégicas.</p>
-            <div>
-                <p>Para o Policial em Patrulha (Mobile):
-                Recebe rotas inteligentes baseadas em dados reais, no estilo Waze;
-                Visualiza áreas com maior incidência de ocorrências;
-                Envia relatórios rápidos de patrulha;
-                Compartilha sua localização com segurança e precisão.</p>
+            <div class="container-boxes">
+                <div class="box-sobre">
+                    <p>Para o Policial em Patrulha (Mobile):
+                    Recebe rotas inteligentes baseadas em dados reais, no estilo Waze;
+                    Visualiza áreas com maior incidência de ocorrências;
+                    Envia relatórios rápidos de patrulha;
+                    Compartilha sua localização com segurança e precisão.</p>
+                </div>
+                <div class="box-sobre">
+                    <p>Para o Policial Administrativo (Web):
+                    Acompanha, em tempo real, a localização das patrulhas;
+                    Visualiza imagens de drone, câmeras corporais e ocorrências;
+                    Analisa dados de criminalidade por bairro, horário e tipo;
+                    Melhora o gerenciamento da força policial com relatórios estratégicos.</p>
+                </div>
             </div>
             <p>Resultado: mais eficiência, mais tempo de resposta e mais segurança para a população.</p>
         </section>
@@ -51,15 +60,17 @@
         <section id="Impacto" class="Impacto">
             <h2>ODS IMPACTADAS</h2>
             <p>Nossa Solução Alinha Tecnologia com Impacto Social</p>
-            <div>
-                <img src="images/ods3.jpg" alt="Odd 3 Onu">
-                <p>ODS 3 – Saúde e Bem-Estar
-                Segurança é bem-estar. Ao reforçar o patrulhamento em áreas vulneráveis, o Conecta Patrulha reduz riscos, aumenta o conforto da população e melhora a qualidade de vida urbana.</p>
-            </div>
-            <div>
-                <img src="images/ods16.jpg" alt="Odd 16 Onu">
-                <p>ODS 16 – Paz, Justiça e Instituições Fortes
-                Com rotas inteligentes, visualização integrada e tomada de decisão baseada em dados, a solução fortalece a atuação institucional da Polícia Militar, promovendo paz e segurança pública de forma transparente e eficiente.</p>
+            <div class="div-box-impacto">
+                <div class="div-odd3">
+                    <img class="img-odd3" src="images/ods3.jpg" alt="Odd 3 Onu">
+                    <p>ODS 3 – Saúde e Bem-Estar
+                    Segurança é bem-estar. Ao reforçar o patrulhamento em áreas vulneráveis, o Conecta Patrulha reduz riscos, aumenta o conforto da população e melhora a qualidade de vida urbana.</p>
+                </div>
+                <div class="div-odd16">
+                    <img class="img-odd16" src="images/ods16.jpg" alt="Odd 16 Onu">
+                    <p>ODS 16 – Paz, Justiça e Instituições Fortes
+                    Com rotas inteligentes, visualização integrada e tomada de decisão baseada em dados, a solução fortalece a atuação institucional da Polícia Militar, promovendo paz e segurança pública de forma transparente e eficiente.</p>
+                </div>
             </div>
         </section>
 
@@ -67,36 +78,62 @@
             <h2>PROTÓTIPO DA SOLUÇÃO</h2>
             <p>Veja como o Conecta Patrulha funciona na prática
             Explore o protótipo interativo da plataforma: visualize as rotas inteligentes, o painel administrativo, as informações das patrulhas e a integração com câmeras e registros de ocorrência.</p>
+            <div>
+                <a href="#" class="link-action" id="link-prototipo">Ver Protótipo</a>
+            </div>
         </section>
 
-        <section id="Blog" class="Blog">
-            <H2>SEÇÃO DE BLOGS</H2>
-            <H4>Conteúdos sobre Tecnologia e Segurança Pública</H4>
-            <P>Como a análise de dados pode transformar o patrulhamento urbano Entenda como padrões de criminalidade ajudam a construir rotas mais eficientes.</P>
-            <P>O papel da tecnologia na modernização das forças policiais Sistemas inteligentes como o Conecta Patrulha elevam a eficiência operacional<P>
-            <P>Uso de drones e câmeras corporais: um novo nível de transparência Benefícios e impacto na segurança e na confiança pública.
-            LGPD e Segurança Pública: como proteger dados com responsabilidade</P>
-            <H4>Veja como o Conecta Patrulha segue as diretrizes da Lei Geral de Proteção de Dados.</H4>
-            <a href="#PaginaBlog">Ver Blog</a>
+        <section id="Blog" class="Blog"> <!--Aplicar API aqui-->
+            <h2>SEÇÃO DE BLOGS</h2>
+
+            <h4>Conteúdos sobre Tecnologia e Segurança Pública</h4>
+
+            <article>
+                <div class="secao-blog">
+                    <p>Como a análise de dados pode transformar o patrulhamento urbano. Entenda como padrões de criminalidade ajudam a construir rotas mais eficientes.</p>
+                </div>
+ 
+                <div class="secao-blog">
+                    <p>O papel da tecnologia na modernização das forças policiais. Sistemas inteligentes como o Conecta Patrulha elevam a eficiência operacional.</p>
+                </div>
+
+                <div class="secao-blog">
+                    <p>Uso de drones e câmeras corporais: um novo nível de transparência. Benefícios e impacto na segurança e na confiança pública. LGPD e Segurança Pública: como proteger dados com responsabilidade.</p>
+                </div>
+            </article>
+
+            <div id="ver-blog">
+                <h4>Veja como o Conecta Patrulha segue as diretrizes da Lei Geral de Proteção de Dados.</h4>
+                <div id="botao-ver-blog" class="link-action">
+                    <a href="#">Ver Blog</a>
+                    <!-- Formulário para criar post -->
+		<section id="criar-post">
+            <h2>Criar Novo Post</h2>
+            <form id="post-form">
+                    <input type="text" id="title" placeholder="Título" required>
+                    <textarea id="content" placeholder="Conteúdo" required></textarea>
+                    <input type="text" id="author" placeholder="Autor" required>
+                    <button type="submit">Publicar</button>
+            </form>
+        </section>
+
+        <!-- Lista de posts -->
+		    <section id="blog">
+            <h2>Posts Recentes</h2>
+            <div id="blog-posts"></div>
+        </section>
+
+    <script src="/API + HTML/blog.js"></script>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer id="Saiba-mais">
-        <h3>Conecta Patrulha — Patrulhamento Inteligente e Integrado</h3>
+        <h4>Conecta Patrulha — Patrulhamento Inteligente e Integrado</h4>
         <p> © 2025 | Todos os direitos reservados</p>
     </footer>
-
-    </section>
-
-<!-- Lista de posts BACK-END -->
-		<section id="blog">
-        <h2>Posts Recentes</h2>
-        <div id="blog-posts"></div>
-    </section>
-
-    <script src="blog.js"></script>
-
 </body>
-<script src="main.js"></script>   
+<script src="main.js"></script>
 </html>
