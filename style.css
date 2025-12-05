@@ -7,15 +7,14 @@
 
 
 :root{
-    --white: #fff;
-    --dark1: #34344e;
-    --dark2: #3a415a;
-    --dark3: #566981;
-    --dark4: #89a7b1;
-    --dark5: #cbdad5;
-    --dark6: #2f2f46;
-    --blue:  #708090;
-    --cyan:  #70e3ea;
+    --white: #ffffff;
+    --blue1: #DADCED;
+    --blue2: #989DC2;
+    --blue3: #536499;
+    --blue4: #293D70;
+    --blue5: #0D285C;
+    --blue6: #031742;
+    --black: #000000;
 }
 
 body {
@@ -25,7 +24,7 @@ body {
 }
 
 header{
-    background-color: var(--dark6);
+    background-color: var(--blue5);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -123,8 +122,8 @@ h4 {
 }
 
 .Inicio {
-    background-color: #3a415a;
-    background-image: url(images/prototipo-solucao/Design\ sem\ nome\ \(1\).png);
+    background-color: var(--white);
+    background-image: url(images/fundo-inicio.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -166,8 +165,11 @@ strong {
 
 
 .Sobre {
-    background-color: #566981;
-    min-height: 950px;
+    background-color: var(--blue5);
+    background-image: url(images/fundo-sobre.png);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 900px;
     padding: 2rem ;
     display: flex;
     flex-direction: column; 
@@ -217,6 +219,7 @@ strong {
 .Prototipo {
     /* overlay to reduce background-image opacity */
     color: var(--white);
+    background-color: var(--blue5);
     height: 900px;
     display: flex;
     flex-direction: column; 
@@ -237,7 +240,9 @@ strong {
 
 /* impacto */ 
 .Impacto {
-    background-color: var(--dark6);
+    background-color: var(--white);
+    background-image: url(images/fundo-inicio.png);
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -289,8 +294,10 @@ strong {
 /*Sexta Seção*/
 
 .Blog {
-    background-color: var(--dark2);
-    height: 2000px;
+    background-color: var(--white);
+    background-image: url(images/fundo-inicio.png);
+    background-size: cover;   
+    ~min-height: 900px;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -444,7 +451,7 @@ strong {
 }
 
 footer {
-    background-color: var(--dark6);
+    background-color: var(--blue5);
     min-height: 100px;
     display: flex;
     flex-direction: row;
