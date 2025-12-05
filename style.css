@@ -276,6 +276,11 @@ strong {
     border-radius: 8px;
 }
 
+.titulo-box-prototipo {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
 /* impacto */ 
 .Impacto {
     background-color: var(--white);
