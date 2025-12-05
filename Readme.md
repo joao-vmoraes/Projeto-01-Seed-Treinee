@@ -65,10 +65,27 @@ O projeto segue as diretrizes da **Lei Geral de Proteção de Dados (LGPD)**, ga
 ---
 
 ## 💻 Landing Page do Projeto
-Segue o link da nossa landing page:
+
+### Link da nossa landing page
+
 xxxxxxxxxxxxxxxxxxxxxxx
+
+### 📑 Estrutura da Página
+
+O layout foi organizado nas seguintes seções para otimizar a experiência do usuário:
+- Header: Navegação principal.
+- Banner + CTA: Chamada para ação principal.
+- Sobre a Solução: Explicação detalhada do projeto.
+- Impacto Social: ODS (Objetivos de Desenvolvimento Sustentável) impactadas.
+- Protótipo: Visualização interativa da solução.
+- Blog: Artigos e atualizações.
+- Footer: Links úteis e contatos.
+
+### 💎 Destaques Técnicos & Design
+- 📱 Design Responsivo: Adaptável a mobile, tablet e desktop.
+- ✨ Efeito Parallax: Profundidade visual na rolagem da página.
+- 🎨 Layout Moderno: Alinhamento fluido utilizando CSS Flexbox.
 
 ## 🛠️ Tecnologias Utilizadas na Landing Page do Projeto
 - **Frontend:** HTML, CSS e Javascript
 - **Backend:** Node.js
-- **Banco de Dados:** 
